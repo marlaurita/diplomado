@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mensaje.textContent = "Haz cambiado el mensaje con JavaScript 🚀";
     document.body.style.backgroundColor = "#dcedc8";
     */
-    const respuesta = prompt("¿Como te llamas?");
+    const respuesta = prompt("¿Como te llamas 2?");
     console.log(respuesta);
     if (respuesta == 0) {
       alert("Hola " + respuesta + " Bienvenido al mundo del desarrollo web");
