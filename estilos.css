@@ -4,10 +4,8 @@ body {
     text-align: center;
 }
 
-header {
-    background-color: #4caf50;
-    color: white;
-    padding: 1rem;
+iframe {
+    width: 100%;
 }
 
 main {
@@ -29,4 +27,29 @@ footer {
     bottom: 0;
     position: fixed;
     width: 100%;
+}
+
+@media (max-width: 600px) { 
+    body {
+        background-color: aquamarine;
+        color: #333;
+        text-align: center;
+    }   
+}
+
+
+/*@media (min-width: 1400px) { 
+    body {
+        background-color: blue;
+        color: #333;
+        text-align: center;
+    }   
+}*/
+
+@media (orientation: landscape) { 
+    body {
+        background-color: blue;
+        color: #333;
+        text-align: center;
+    }   
 }

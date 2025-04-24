@@ -5,10 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
   boton.addEventListener("click", function () {
     mensaje.textContent = "Haz cambiado el mensaje con JavaScript 🚀";
     document.body.style.backgroundColor = "#dcedc8";
+    const parrafo = document.createElement("p");
+    parrafo.innerText = "Esto es un parrafo";
+    document.body.appendChild(parrafo);
+    document.createElement();
     // Ciclos
-    for (let i = 1; i <= 10; i++) {
+    /*for (let i = 1; i <= 10; i++) {
       console.log("5 * " + i + " = " + 5 * i);
-    }
+    }*/
 
     // Hola soy un comentario
 
@@ -16,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mensaje.textContent = "Haz cambiado el mensaje con JavaScript 🚀";
     document.body.style.backgroundColor = "#dcedc8";
     */
-    const respuesta = prompt("¿Como te llamas?");
+    /* const respuesta = prompt("¿Como te llamas 2?");
     console.log(respuesta);
     if (respuesta == 0) {
       alert("Hola " + respuesta + " Bienvenido al mundo del desarrollo web");
@@ -24,6 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("mejor ven otro día");
     } else {
       alert("mejor ven el lunes ");
-    }
+    }*/
   });
 });

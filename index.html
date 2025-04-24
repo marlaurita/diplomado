@@ -1,21 +1,35 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera página web</title>
-  <link rel="stylesheet" href="./estilos.css">
 
-  <!--  ESTO ES UN COMENTARIO   -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <!--  ESTO ES UN COMENTARIO   -->
 </head>
+
 <body>
-    <header> 
-        <h1>¡Hola Mundo!</h1>
-    </header>
+    <iframe src="./header/header.html" frameborder="0"></iframe>
     <main>
         <p id="mensaje"> Bienvenido a tu primer sitio web con HTML, CSS y JavaScript. </p>
         <button id="cambiarTexto">Haz click para cambiar el mensaje</button>
+
+        <form>
+            <label for="name">
+                Nombre :
+            </label>
+            <input type="text" maxlength="10" id="name" name="name" />
+            <label> Género Femenino</label>
+            <input type="radio" />
+            <label> Género Masculino</label>
+            <input type="radio" />
+            <label> Escribe tu biografía</label>
+            <textarea>
+                Escribe aquí
+            </textarea>
+        </form>
     </main>
 
     <footer>
@@ -23,5 +37,15 @@
     </footer>
 
     <script src="./funcionalidad.js"></script>
+
+    <!--<script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el header:', error));
+    </script>-->
 </body>
+
 </html>
